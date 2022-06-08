@@ -6,7 +6,21 @@ namespace Operators_and_cycles_2
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            bool isActive = true;
+
+            Console.WriteLine("Для выхода из программы наберите exit");
+
+            while (isActive)
+            {
+                Console.Write("Введите любое сообщение: ");
+                string message = Console.ReadLine();
+                Console.WriteLine(message);
+
+                if (message == "exit")
+                {
+                    isActive = false;
+                }
+            }
         }
     }
 }

@@ -6,7 +6,16 @@ namespace Operators_and_cycles_3
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            int result = 0;
+            int startResult;
+            int maxResult = 98;
+            int factor = 1;
+
+            for (startResult = 7; result < maxResult; factor++)
+            {
+                result = startResult * factor;
+                Console.WriteLine(result);
+            }
         }
     }
 }
