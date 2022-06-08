@@ -6,7 +6,17 @@ namespace Basics_5
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            string name = "Кругликов";
+            string lastName = "Вадим";
+            string tempString;
+
+            Console.WriteLine($"Исходные данные: Имя - {name} Фамилия - {lastName}");
+
+            tempString = name;
+            name = lastName;
+            lastName = tempString;
+
+            Console.WriteLine($"Исходные данные: Имя - {name} Фамилия - {lastName}");
         }
     }
 }
